@@ -1,3 +1,135 @@
-body {
+/* body {
   background: peachpuff;
+}
+.container{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  gap: 0.5em;
+    flex-wrap: wrap;}
+ 
+/* container{
+  height: 544px; 
+  width: 100%;
+  border: 2px solid black;
+    display: flex;} */
+/* *{
+border: 1px solid rgb(139, 46, 139);
+}
+.a{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.b,.c,.d,.e,.f,.g{
+  display:flex;
+  flex-direction: row;
+  max-width: 26.6%;
+  width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+} */
+/* .h{
+  flex-direction: column-reverse;
+} */ */
+* {
+  border: 1px solid purple;
+}
+
+body {
+  background: rgba(221, 231, 173, 0.993);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  background-color: lightgrey;
+  border: 1px solid rgb(70, 45, 64);
+  margin: 10px;
+}
+
+.h {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+}
+
+.container2 {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+  flex-grow: 2;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 20%;
+}
+
+.b, .c, .d, .e, .f, .g {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+    /* align-items: center; */
+  height: 40%;
+  width: 25%;
+  /* flex-grow: 2; */
+}
+
+.h {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%;
+    height: 40%;
+  }
+  .b,.c,.d,.e,.f,.g{
+    max-width: 26.6%;
+  }
+
+  .h{
+    flex-grow: 1;
+    height: 100%;
+  }
+  .b, .c, .d {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+    flex-grow: 1;
+  }
+  .e, .f, .g {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+    flex-grow: 1;
+  }
+  
 }
