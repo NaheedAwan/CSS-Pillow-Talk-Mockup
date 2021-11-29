@@ -63,9 +63,10 @@ body {
   justify-content: center;
   text-align: center;
   height: 40%;
+  background-color: hotpink;
 }
 
-.container2 {
+.row{
   display: inline-block;
   flex-direction: column;
   justify-content: center;
@@ -90,16 +91,18 @@ body {
     /* align-items: center; */
   height: 40%;
   width: 25%;
-  /* flex-grow: 2; */
+  align-items: center;
+  flex-grow: 2;
 }
 
-.h {
+/* .h {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   text-align: center;
+  align-self: flex-end;
   
-}
+} */
 @media (min-width:600px) {
   .container {
     flex-direction: row;
@@ -116,6 +119,7 @@ body {
   .h{
     flex-grow: 1;
     height: 100%;
+    width: 100%;
   }
   .b, .c, .d {
     display: inline-block;
@@ -123,13 +127,16 @@ body {
     flex-wrap: wrap;
     height: 80%;
     flex-grow: 1;
+    justify-content: space-around;
+    align-items: stretch;
   }
   .e, .f, .g {
     display: inline-block;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow:row wrap;
     height: 80%;
     flex-grow: 1;
+    justify-content: space-around;
+    align-items: stretch;
   }
   
 }
